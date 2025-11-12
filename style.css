@@ -57,14 +57,14 @@ header {
 .menu-mobile-btn {
   display: none;
   position: fixed;
-  top: 30px;
-  left: 40px;
+  top: 25px;
+  left: 35px;
+  font-size: 40px;
+  padding: 14px 18px;
   z-index: 10001;
   background: #004861;
   border: none;
   color: white;
-  font-size: 1.3px;
-  padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
   user-select: none;
@@ -225,17 +225,42 @@ header {
 
 
 /* Responsividade para não quebrar texto */
-@media (max-width: 900px) {
-    .quem-somos-content {
-        margin-left: 4vw;
-        max-width: 88vw;
-        padding: 22px 0;
-    }
-    .quem-somos {
-        min-height: 260px;
-        background-size: cover;
-    }
+@media (min-width: 768px) and (max-width: 1023px) {
+    .quem-somos-title {
+    font-size: 32px !important;
+    left: 130px !important;
+    top: 12% !important;
+    transform: translateX(-50%);
+  }
+
+  .quem-somos-texto-central {
+    font-size: 24px !important;
+    max-width: 500px !important;
+    width: 500px !important;
+    left: 300px !important;
+    top: 200px !important;
+    transform: translateX(-50%) !important;
+  }
 }
+
+@media (max-width: 767px) {
+  .quem-somos-title {
+    font-size: 32px !important;
+    left: 130px !important;
+    top: 12% !important;
+    transform: translateX(-50%);
+  }
+
+  .quem-somos-texto-central {
+    font-size: 24px !important;
+    max-width: 350px !important;
+    width: 90vw !important;
+    left: 200px !important;
+    top: 175px !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
 
 .institucional {
     width: 100%;
@@ -574,28 +599,33 @@ header {
   left: auto;
 }
 
-@media (max-width: 900px) {
-  .parceiros-track {
-    gap: 12px;
-  }
-
-  .parceiro-card {
-    min-width: 70vw;
-    max-width: 70vw;
-    height: 260px;
-    padding: 22px 4px 0 4px;
-  }
-
+@media (min-width: 768px) and (max-width: 1023px) {
   .parceiros-carousel {
-    max-width: 23vw;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .parceiros-track {
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
 
-@media (max-width: 768px) {
-  .parceiro-card {
-    min-width: 70vw;
+
+@media (max-width: 767px) {
+  .parceiros-carousel {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .parceiros-track {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
+
 
 
 /* Contato -------------------------------------- */
@@ -706,7 +736,6 @@ header {
   color: #e5faff;
   margin: 0 0 4px 0;
 }
-
 .footer-contact h3 {
   margin-bottom: 16px;
   font-size: 1.18rem;
@@ -725,7 +754,7 @@ header {
 }
 .footer-form input,
 .footer-form textarea {
-  background: rgba(0, 228, 255, 0.15);
+  background: transparent;
   border: 1.5px solid #c2e8f9;
   border-radius: 6px;
   color: #fff;
@@ -739,10 +768,6 @@ header {
 .footer-form input:focus,
 .footer-form textarea:focus {
   border-color: #00e4ff;
-}
-.footer-form input::placeholder, .footer-form textarea::placeholder {
-  color: #fff;
-  opacity: 1;
 }
 .footer-form button {
   margin-top: 12px;
@@ -761,6 +786,10 @@ header {
 .footer-form button:hover {
   background: #00e4ff;
   color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer
 }
 @media (max-width: 900px) {
   .footer {
@@ -836,7 +865,7 @@ header {
 }
 
 /* Celular */
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   .hero-content h1,
   .quem-somos-texto-central {
     font-size: 1.28rem;
@@ -855,4 +884,5 @@ header {
   .contato-card h3 {
     font-size: 0.92rem;
   }
+  
 }

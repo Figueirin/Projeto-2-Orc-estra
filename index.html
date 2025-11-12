@@ -285,7 +285,7 @@
 <footer class="footer">
   <div class="footer-info">
     <h3>InovaTech</h3>
-    <p>Soluções inteligentes em tecnologia e inovação urbana</p>
+    <p>Soluções inteligentes <br>em tecnologia e <br>inovação urbana</p>
     <h4>Créditos</h4>
     <p>© 2025 InovaTech — Todos os direitos reservados.<br>
        Projeto acadêmico – Processo Trainee.
@@ -293,13 +293,14 @@
   </div>
   <div class="footer-contact">
     <h3>Fale conosco</h3>
-    <form class="footer-form">
+    <form class="footer-form" action="https://formsubmit.co/renato.quick@hotmail.com" method="POST" target="_top" id="contact-form">
+       <input type="hidden" name="_captcha" value="false" />
       <div class="footer-form-row">
-        <input type="text" placeholder="Nome completo" required>
-        <input type="email" placeholder="E-mail" required>
+        <input type="text" name="nome" placeholder="Nome completo" required>
+        <input type="email" name="email" placeholder="E-mail" required>
       </div>
-      <input type="text" placeholder="Telefone">
-      <textarea placeholder="Mensagem" rows="2"></textarea>
+      <input type="text" name="telefone" placeholder="Telefone">
+      <textarea name="mensagem" placeholder="Mensagem"></textarea>
       <button type="submit">Enviar</button>
     </form>
   </div>
