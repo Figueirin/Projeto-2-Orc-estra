@@ -789,9 +789,6 @@ header {
 }
 
 @media (max-width: 900px) {
-  .footer
-}
-@media (max-width: 900px) {
   .footer {
     flex-direction: column;
     align-items: stretch;
